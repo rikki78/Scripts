@@ -46,8 +46,8 @@ shared.set('screensaver', screensaver)
 
 
 if play == "0" and screensaver == "1":
-  subprocess.call(["vcgencmd", "display_power", "0"])
+  subprocess.call(["/opt/vc/bin/vcgencmd", "display_power", "0"])
 if play == "1":
-  subprocess.call(["vcgencmd", "display_power", "1"])
+  subprocess.call(["/opt/vc/bin/vcgencmd", "display_power", "1"])
 
 print("play " + play + " scr " + screensaver)
